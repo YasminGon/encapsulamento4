@@ -36,4 +36,22 @@ public class Perfil{
     public String getSenha() {
         return senha;
     }
+
+    public Perfil(String nome, int idade, String username, String senha){
+        this.nome=nome;
+        this.idade=idade;
+        this.username=username;
+        this.senha=senha;
+    }
+    public Perfil(){
+
+    }
+
+    public boolean verificarSenha(String senha){
+        return this.senha.equals(senha);
+    }
+
+    public void alterarSenha (String novaSenha){
+        this.senha = novaSenha;
+    }
 }
